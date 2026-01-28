@@ -15,148 +15,127 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .profile-border {
-            position: relative;
-        }
-        .profile-border::after {
-            content: '';
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            right: -10px;
-            bottom: -10px;
-            border: 2px solid #2563eb;
-            border-radius: 1.5rem;
-            z-index: -1;
+        .profile-shadow {
+            box-shadow: 20px 20px 0px 0px rgba(37, 99, 235, 0.1);
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-bold tracking-tight uppercase">GEORGE<span class="text-blue-600">WARIS</span></div>
-            <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest text-slate-600">
+            <div class="text-xl font-bold tracking-tighter uppercase">GEORGE<span class="text-blue-600">WARIS</span></div>
+            <div class="hidden md:flex space-x-8 font-medium text-xs uppercase tracking-[0.2em] text-slate-500">
                 <a href="#work" class="hover:text-blue-600 transition">Work</a>
                 <a href="#about" class="hover:text-blue-600 transition">About</a>
                 <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
             </div>
-            <a href="mailto:Georgetown98000@gmail.com" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition">Hire Me</a>
+            <a href="mailto:Georgetown98000@gmail.com" class="bg-blue-600 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200">Hire Me</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="pt-32 pb-16 px-6">
+    <header class="pt-32 md:pt-48 pb-20 px-6">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-blue-600 font-semibold tracking-widest uppercase text-xs md:text-sm mb-4">UI/UX Designer & Shopify Expert</h2>
-            <h1 class="text-4xl md:text-7xl font-bold mb-6 leading-tight">Building <span class="gradient-text">High-Converting</span> Shopify Stores.</h1>
-            <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                I design conversion-focused interfaces in Figma and bring them to life using Replo and Shopify. 
-                Built to drive sales, not just look pretty.
+            <h2 class="text-blue-600 font-bold tracking-[0.3em] uppercase text-xs mb-6">eCommerce UI/UX Specialist</h2>
+            <h1 class="text-5xl md:text-8xl font-bold mb-8 leading-[1.1] tracking-tight text-slate-950">
+                High-Converting <span class="gradient-text">Shopify</span> Stores.
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+                I design conversion-focused interfaces in Figma and build them in Replo & Shopify to drive massive revenue for brands.
             </p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#work" class="bg-slate-900 text-white px-8 py-4 rounded-lg font-bold hover:bg-slate-800 transition shadow-lg">View My Work</a>
-                <a href="https://x.com/georgetown98000" target="_blank" class="bg-white border border-slate-200 px-8 py-4 rounded-lg font-bold hover:bg-slate-50 transition flex items-center justify-center">
-                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
-                    Twitter
-                </a>
+            <div class="flex flex-col md:flex-row justify-center gap-5">
+                <a href="#work" class="bg-slate-950 text-white px-10 py-5 rounded-xl font-bold hover:bg-slate-800 transition shadow-xl">View Projects</a>
+                <a href="#contact" class="bg-white border border-slate-200 px-10 py-5 rounded-xl font-bold hover:bg-slate-50 transition">Let's Talk</a>
             </div>
         </div>
     </header>
 
     <!-- Brands Section -->
-    <section class="py-12 border-y border-slate-200 bg-white">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <p class="text-slate-400 text-xs font-semibold uppercase tracking-[0.2em] mb-8">Trusted by Brands & Agencies</p>
-            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale">
-                <span class="text-xl md:text-2xl font-bold italic">PrimalQueen</span>
-                <span class="text-xl md:text-2xl font-bold tracking-tighter">REPLO</span>
-                <span class="text-xl md:text-2xl font-black">SHOPIFY</span>
-                <span class="text-xl md:text-2xl font-semibold">FIGMA</span>
+    <section class="py-16 border-y border-slate-100 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <p class="text-center text-slate-400 text-[10px] font-bold uppercase tracking-[0.4em] mb-10 text-opacity-80">Trusted by Brands & Agencies</p>
+            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-40 grayscale">
+                <span class="text-xl md:text-2xl font-black">PrimalQueen</span>
+                <span class="text-xl md:text-2xl font-bold italic tracking-tighter uppercase">Replo</span>
+                <span class="text-xl md:text-2xl font-black uppercase">Shopify</span>
+                <span class="text-xl md:text-2xl font-bold">FIGMA</span>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 px-6 overflow-hidden">
+    <section id="about" class="py-24 px-6 bg-white">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div class="order-2 md:order-1">
-                <h3 class="text-3xl font-bold mb-6">Optimized Design for eCommerce</h3>
-                <div class="space-y-4 text-slate-600 leading-relaxed">
+                <h3 class="text-3xl md:text-4xl font-bold mb-8 tracking-tight">Design that sells.</h3>
+                <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
                     <p>Hi, I’m <strong>George Waris</strong> — a UI/UX Designer specialized in building high-converting Shopify landing pages and stores.</p>
-                    <p>I’ve worked with eCommerce brands and agencies across the globe, delivering results-driven landing pages that perform. My approach blends strong UI/UX principles, data-driven design, and conversion psychology.</p>
-                    <p>Beyond design, I bring copywriting knowledge into every project—structuring pages with persuasive messaging and optimized CTAs to maximize revenue for my clients.</p>
+                    <p>My approach blends strong UI/UX principles, data-driven design, and <strong>conversion psychology</strong>. I don't just make things look pretty; I structure pages with persuasive messaging and optimized CTAs to maximize your revenue.</p>
+                    <p>From advertorials and listicles to full store builds, I use Figma and Replo to deliver results-driven assets for eCommerce brands worldwide.</p>
                 </div>
-                <div class="mt-8 grid grid-cols-2 gap-4">
-                    <div class="p-4 bg-white rounded-xl border border-slate-100 shadow-sm">
-                        <h4 class="font-bold text-blue-600 italic">Specialized</h4>
-                        <p class="text-sm text-slate-500">Shopify & Replo</p>
-                    </div>
-                    <div class="p-4 bg-white rounded-xl border border-slate-100 shadow-sm">
-                        <h4 class="font-bold text-blue-600 italic">Focused</h4>
-                        <p class="text-sm text-slate-500">CRO & Psychology</p>
-                    </div>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <span class="px-4 py-2 bg-slate-100 rounded-lg text-sm font-bold text-slate-700">#ConversionRateOptimization</span>
+                    <span class="px-4 py-2 bg-slate-100 rounded-lg text-sm font-bold text-slate-700">#ShopifyExpert</span>
+                    <span class="px-4 py-2 bg-slate-100 rounded-lg text-sm font-bold text-slate-700">#ReploDeveloper</span>
                 </div>
             </div>
             <div class="order-1 md:order-2 flex justify-center">
-                <div class="profile-border w-64 h-80 md:w-80 md:h-[450px]">
-                    <img src="https://postimg.cc/6yH755DX" 
+                <div class="relative max-w-sm">
+                    <img src="https://i.postimg.cc/W1V08d8h/IMG-20260128-WA0017(1).jpg" 
                          alt="George Waris" 
-                         class="w-full h-full object-cover rounded-3xl shadow-2xl">
+                         class="rounded-2xl shadow-2xl profile-shadow w-full h-auto object-cover border-4 border-white">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="work" class="py-20 bg-slate-900 text-white px-6">
+    <section id="work" class="py-24 bg-slate-950 text-white px-6">
         <div class="max-w-6xl mx-auto">
-            <div class="mb-16">
-                <h3 class="text-4xl font-bold mb-4">Selected Work</h3>
-                <p class="text-slate-400">Shopify development and UI/UX samples.</p>
+            <div class="mb-20">
+                <h3 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Portfolio Samples</h3>
+                <p class="text-slate-400 text-lg">Live Shopify stores and landing pages I've helped build and optimize.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-10">
                 <!-- Project 1 -->
-                <a href="https://www.hawthorneskinandbeauty.com.au/" target="_blank" class="group block">
-                    <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 transition-all duration-300 hover:border-blue-500 hover:-translate-y-2">
-                        <div class="aspect-[4/3] bg-slate-700 flex items-center justify-center">
-                             <span class="text-xs uppercase tracking-widest text-slate-500">Hawthorne Skin & Beauty</span>
+                <a href="https://www.hawthorneskinandbeauty.com.au/" target="_blank" class="group">
+                    <div class="space-y-4">
+                        <div class="aspect-[4/5] bg-slate-800 rounded-2xl overflow-hidden border border-slate-800 transition-all duration-500 group-hover:border-blue-500">
+                             <div class="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center p-8">
+                                <span class="text-center font-bold text-slate-500 group-hover:text-blue-400 transition">Hawthorne Skin & Beauty</span>
+                             </div>
                         </div>
-                        <div class="p-6">
-                            <h4 class="text-lg font-bold mb-1">Hawthorne Skin</h4>
-                            <p class="text-slate-400 text-xs mb-4 uppercase tracking-tighter font-semibold">Shopify Development</p>
-                            <span class="text-blue-400 text-xs font-bold flex items-center">VISIT SITE <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></span>
-                        </div>
+                        <h4 class="text-xl font-bold group-hover:text-blue-400 transition">Hawthorne Skin</h4>
+                        <p class="text-sm text-slate-400 uppercase tracking-widest font-semibold">Store Development</p>
                     </div>
                 </a>
 
                 <!-- Project 2 -->
-                <a href="https://helloobeauty.nl/" target="_blank" class="group block">
-                    <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 transition-all duration-300 hover:border-blue-500 hover:-translate-y-2">
-                        <div class="aspect-[4/3] bg-slate-700 flex items-center justify-center">
-                            <span class="text-xs uppercase tracking-widest text-slate-500">Helloo Beauty</span>
+                <a href="https://helloobeauty.nl/" target="_blank" class="group">
+                    <div class="space-y-4">
+                        <div class="aspect-[4/5] bg-slate-800 rounded-2xl overflow-hidden border border-slate-800 transition-all duration-500 group-hover:border-blue-500">
+                            <div class="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center p-8">
+                                <span class="text-center font-bold text-slate-500 group-hover:text-blue-400 transition">Helloo Beauty</span>
+                             </div>
                         </div>
-                        <div class="p-6">
-                            <h4 class="text-lg font-bold mb-1">Helloo Beauty</h4>
-                            <p class="text-slate-400 text-xs mb-4 uppercase tracking-tighter font-semibold">UI/UX Landing Page</p>
-                            <span class="text-blue-400 text-xs font-bold flex items-center">VISIT SITE <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></span>
-                        </div>
+                        <h4 class="text-xl font-bold group-hover:text-blue-400 transition">Helloo Beauty</h4>
+                        <p class="text-sm text-slate-400 uppercase tracking-widest font-semibold">UI/UX & Replo</p>
                     </div>
                 </a>
 
                 <!-- Project 3 -->
-                <a href="https://www.bikinisaturdays.com" target="_blank" class="group block">
-                    <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 transition-all duration-300 hover:border-blue-500 hover:-translate-y-2">
-                        <div class="aspect-[4/3] bg-slate-700 flex items-center justify-center">
-                            <span class="text-xs uppercase tracking-widest text-slate-500">Bikini Saturdays</span>
+                <a href="https://www.bikinisaturdays.com" target="_blank" class="group">
+                    <div class="space-y-4">
+                        <div class="aspect-[4/5] bg-slate-800 rounded-2xl overflow-hidden border border-slate-800 transition-all duration-500 group-hover:border-blue-500">
+                            <div class="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center p-8">
+                                <span class="text-center font-bold text-slate-500 group-hover:text-blue-400 transition">Bikini Saturdays</span>
+                             </div>
                         </div>
-                        <div class="p-6">
-                            <h4 class="text-lg font-bold mb-1">Bikini Saturdays</h4>
-                            <p class="text-slate-400 text-xs mb-4 uppercase tracking-tighter font-semibold">Sales Funnel Design</p>
-                            <span class="text-blue-400 text-xs font-bold flex items-center">VISIT SITE <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></span>
-                        </div>
+                        <h4 class="text-xl font-bold group-hover:text-blue-400 transition">Bikini Saturdays</h4>
+                        <p class="text-sm text-slate-400 uppercase tracking-widest font-semibold">High-Impact Funnel</p>
                     </div>
                 </a>
             </div>
@@ -164,40 +143,35 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 px-6 bg-white">
-        <div class="max-w-4xl mx-auto text-center">
-            <h3 class="text-4xl font-bold mb-8">Ready to grow?</h3>
-            <p class="text-xl text-slate-600 mb-12">I’m currently taking on projects for Q1 2025. Let's discuss your brand goals.</p>
-            
-            <div class="grid md:grid-cols-3 gap-6 mb-12">
-                <a href="mailto:Georgetown98000@gmail.com" class="p-8 rounded-2xl border border-slate-200 hover:border-blue-300 hover:bg-blue-50 transition">
-                    <div class="text-blue-600 mb-4 flex justify-center">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                    </div>
-                    <p class="font-bold">Email</p>
-                    <p class="text-xs text-slate-500 truncate mt-1">Georgetown98000@gmail.com</p>
-                </a>
-                <a href="tel:+2349030323036" class="p-8 rounded-2xl border border-slate-200 hover:border-blue-300 hover:bg-blue-50 transition">
-                    <div class="text-blue-600 mb-4 flex justify-center">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                    </div>
-                    <p class="font-bold">WhatsApp</p>
-                    <p class="text-xs text-slate-500 mt-1">+234 903 032 3036</p>
-                </a>
-                <a href="https://x.com/georgetown98000" target="_blank" class="p-8 rounded-2xl border border-slate-200 hover:border-blue-300 hover:bg-blue-50 transition">
-                    <div class="text-blue-600 mb-4 flex justify-center">
-                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
-                    </div>
-                    <p class="font-bold">Twitter / X</p>
-                    <p class="text-xs text-slate-500 mt-1">@georgetown98000</p>
-                </a>
+    <section id="contact" class="py-32 px-6">
+        <div class="max-w-4xl mx-auto bg-blue-600 rounded-[2rem] p-10 md:p-20 text-center text-white shadow-2xl shadow-blue-200 relative overflow-hidden">
+            <div class="relative z-10">
+                <h3 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">Let’s build something profitable.</h3>
+                <p class="text-blue-100 text-lg md:text-xl mb-12">I'm available for freelance projects and agency partnerships.</p>
+                
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+                    <a href="mailto:Georgetown98000@gmail.com" class="bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition w-full md:w-auto">
+                        Email Me
+                    </a>
+                    <a href="tel:+2349030323036" class="text-white border-b-2 border-blue-400 hover:border-white transition font-bold py-2">
+                        +234 903 032 3036
+                    </a>
+                </div>
+                
+                <div class="mt-12 pt-8 border-t border-blue-500/50 flex justify-center gap-8">
+                    <a href="https://x.com/georgetown98000" target="_blank" class="hover:scale-110 transition">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                    </a>
+                </div>
             </div>
+            <!-- Decorative circle -->
+            <div class="absolute -top-20 -right-20 w-64 h-64 bg-blue-500 rounded-full opacity-50"></div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 border-t border-slate-200 text-center">
-        <p class="text-slate-400 text-xs tracking-widest uppercase italic font-semibold">George Waris — Shopify UI/UX Specialist</p>
+    <footer class="pb-12 text-center">
+        <p class="text-slate-400 text-[10px] font-bold uppercase tracking-[0.5em]">George Waris &copy; 2025</p>
     </footer>
 
 </body>
