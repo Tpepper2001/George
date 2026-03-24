@@ -18,6 +18,12 @@
         .profile-shadow {
             box-shadow: 20px 20px 0px 0px rgba(37, 99, 235, 0.1);
         }
+        .work-card {
+            transition: all 0.3s ease;
+        }
+        .work-card:hover {
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -27,7 +33,7 @@
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="text-xl font-bold tracking-tighter uppercase">GEORGE<span class="text-blue-600">WARIS</span></div>
             <div class="hidden md:flex space-x-8 font-medium text-xs uppercase tracking-[0.2em] text-slate-500">
-                <a href="#work" class="hover:text-blue-600 transition">Work</a>
+                <a href="#work" class="hover:text-blue-600 transition">Portfolio</a>
                 <a href="#about" class="hover:text-blue-600 transition">About</a>
                 <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
             </div>
@@ -46,7 +52,7 @@
                 I design conversion-focused interfaces in Figma and build them in Replo & Shopify to drive massive revenue for brands.
             </p>
             <div class="flex flex-col md:flex-row justify-center gap-5">
-                <a href="#work" class="bg-slate-950 text-white px-10 py-5 rounded-xl font-bold hover:bg-slate-800 transition shadow-xl">View Projects</a>
+                <a href="#work" class="bg-slate-950 text-white px-10 py-5 rounded-xl font-bold hover:bg-slate-800 transition shadow-xl">View Portfolio</a>
                 <a href="#contact" class="bg-white border border-slate-200 px-10 py-5 rounded-xl font-bold hover:bg-slate-50 transition">Let's Talk</a>
             </div>
         </div>
@@ -55,12 +61,113 @@
     <!-- Brands Section -->
     <section class="py-16 border-y border-slate-100 bg-white">
         <div class="max-w-6xl mx-auto px-6">
-            <p class="text-center text-slate-400 text-[10px] font-bold uppercase tracking-[0.4em] mb-10 text-opacity-80">Trusted by Brands & Agencies</p>
+            <p class="text-center text-slate-400 text-[10px] font-bold uppercase tracking-[0.4em] mb-10 text-opacity-80">Trusted by Brands Worldwide</p>
             <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-40 grayscale">
-                <span class="text-xl md:text-2xl font-black">PrimalQueen</span>
+                <span class="text-xl md:text-2xl font-black">Happy V</span>
                 <span class="text-xl md:text-2xl font-bold italic tracking-tighter uppercase">Replo</span>
                 <span class="text-xl md:text-2xl font-black uppercase">Shopify</span>
-                <span class="text-xl md:text-2xl font-bold">FIGMA</span>
+                <span class="text-xl md:text-2xl font-bold">Old School Labs</span>
+                <span class="text-xl md:text-2xl font-bold">Pvolve</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="work" class="py-24 bg-slate-950 text-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16 text-center">
+                <h3 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Recent Projects</h3>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto">A selection of live Shopify stores, advertorials, and landing pages built for maximum conversion.</p>
+            </div>
+
+            <!-- Advertorials -->
+            <div class="mb-20">
+                <div class="flex items-center gap-4 mb-10">
+                    <h4 class="text-2xl font-bold">Advertorials</h4>
+                    <div class="h-px bg-slate-800 flex-grow"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="https://oxynaturals.com/pages/advertorial" target="_blank" class="work-card group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest">Pre-Sell Page</span>
+                        <h5 class="text-xl font-bold mt-2 group-hover:text-blue-400 transition">OxyNaturals Advertorial</h5>
+                    </a>
+                    <a href="https://fifthandfido.com/pages/daily8-advertorial" target="_blank" class="work-card group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest">Listicle Advertorial</span>
+                        <h5 class="text-xl font-bold mt-2 group-hover:text-blue-400 transition">Fifth & Fido Daily 8</h5>
+                    </a>
+                    <a href="https://happyv.com/pages/lp-cw-2" target="_blank" class="work-card group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest">Direct Response</span>
+                        <h5 class="text-xl font-bold mt-2 group-hover:text-blue-400 transition">Happy V Journey</h5>
+                    </a>
+                    <a href="https://shop.oldschoollabs.com/pages/advertorial-ozempic-butt-v1" target="_blank" class="work-card group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest">VSL Advertorial</span>
+                        <h5 class="text-xl font-bold mt-2 group-hover:text-blue-400 transition">Old School Labs (Creatine)</h5>
+                    </a>
+                    <a href="https://www.rainbownutrients.com/pages/whg-adv-01" target="_blank" class="work-card group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest">Conversion Page</span>
+                        <h5 class="text-xl font-bold mt-2 group-hover:text-blue-400 transition">Rainbow Nutrients RN</h5>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product Pages -->
+            <div class="mb-20">
+                <div class="flex items-center gap-4 mb-10">
+                    <h4 class="text-2xl font-bold">Product Pages (PDP)</h4>
+                    <div class="h-px bg-slate-800 flex-grow"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="https://golfcourselawn.store/products/celsius-wg-broadleaf-and-grassy-weed-control-for-warm-season-turf?variant=43710913183993" target="_blank" class="work-card group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest">Shopify PDP</span>
+                        <h5 class="text-xl font-bold mt-2 group-hover:text-blue-400 transition">Golf Course Lawn</h5>
+                    </a>
+                    <a href="https://xohalal.com/pages/join" target="_blank" class="work-card group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest">Subscription Landing Page</span>
+                        <h5 class="text-xl font-bold mt-2 group-hover:text-blue-400 transition">XO Halal Join Page</h5>
+                    </a>
+                    <a href="https://www.rainbownutrients.com/pages/whg-pdp-v1" target="_blank" class="work-card group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest">Optimized PDP</span>
+                        <h5 class="text-xl font-bold mt-2 group-hover:text-blue-400 transition">Rainbow Nutrients V2</h5>
+                    </a>
+                    <a href="https://tastygains.com/apps/alchemy/element/preview?elementId=d69ccea5-e897-43e1-a5ef-70f364f4af44&storeId=b897f99d-70ba-4822-b475-2cfd1e8e5bcd" target="_blank" class="work-card group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest">Replo Build</span>
+                        <h5 class="text-xl font-bold mt-2 group-hover:text-blue-400 transition">Tasty Gains</h5>
+                    </a>
+                    <a href="https://kaliqo.com/products/solar-lantern-outdoor-lights" target="_blank" class="work-card group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest">Custom PDP</span>
+                        <h5 class="text-xl font-bold mt-2 group-hover:text-blue-400 transition">Kaliqo Outdoor Lights</h5>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Listicles -->
+            <div>
+                <div class="flex items-center gap-4 mb-10">
+                    <h4 class="text-2xl font-bold">Listicle Pages</h4>
+                    <div class="h-px bg-slate-800 flex-grow"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="https://switch-nails.com/en/apps/alchemy/element/preview?elementId=582f7faf-d360-4fbc-8e99-eb1385efd507&storeId=190f3c8c-d6d5-4425-acb3-953b35aeb5fb" target="_blank" class="work-card group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest">Product Listicle</span>
+                        <h5 class="text-xl font-bold mt-2 group-hover:text-blue-400 transition">Switch Nails CS</h5>
+                    </a>
+                    <a href="https://theearthlingco.com/pages/5-reasons-why" target="_blank" class="work-card group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest">Reason Why Page</span>
+                        <h5 class="text-xl font-bold mt-2 group-hover:text-blue-400 transition">The Earthling Co</h5>
+                    </a>
+                    <a href="https://hummii.com/pages/landing-page" target="_blank" class="work-card group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest">Product Box Listicle</span>
+                        <h5 class="text-xl font-bold mt-2 group-hover:text-blue-400 transition">Hummii Landing Page</h5>
+                    </a>
+                    <a href="https://www.rejuvia.co/pages/rejuvia-introduction-listicle" target="_blank" class="work-card group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest">Introduction Page</span>
+                        <h5 class="text-xl font-bold mt-2 group-hover:text-blue-400 transition">Rejuvia Sleep Spray</h5>
+                    </a>
+                    <a href="https://www.pvolve.com/pages/listicle-1" target="_blank" class="work-card group bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest">Multi-Benefit Listicle</span>
+                        <h5 class="text-xl font-bold mt-2 group-hover:text-blue-400 transition">Pvolve Workout</h5>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -87,57 +194,6 @@
                          alt="George Waris" 
                          class="rounded-2xl shadow-2xl profile-shadow w-full h-auto object-cover border-4 border-white">
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="work" class="py-24 bg-slate-950 text-white px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="mb-20">
-                <h3 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Portfolio Samples</h3>
-                <p class="text-slate-400 text-lg">Live Shopify stores and landing pages I've helped build and optimize.</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-10">
-                <!-- Project 1 -->
-                <a href="https://www.hawthorneskinandbeauty.com.au/" target="_blank" class="group">
-                    <div class="space-y-4">
-                        <div class="aspect-[4/5] bg-slate-800 rounded-2xl overflow-hidden border border-slate-800 transition-all duration-500 group-hover:border-blue-500">
-                             <div class="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center p-8">
-                                <span class="text-center font-bold text-slate-500 group-hover:text-blue-400 transition">Hawthorne Skin & Beauty</span>
-                             </div>
-                        </div>
-                        <h4 class="text-xl font-bold group-hover:text-blue-400 transition">Hawthorne Skin</h4>
-                        <p class="text-sm text-slate-400 uppercase tracking-widest font-semibold">Store Development</p>
-                    </div>
-                </a>
-
-                <!-- Project 2 -->
-                <a href="https://helloobeauty.nl/" target="_blank" class="group">
-                    <div class="space-y-4">
-                        <div class="aspect-[4/5] bg-slate-800 rounded-2xl overflow-hidden border border-slate-800 transition-all duration-500 group-hover:border-blue-500">
-                            <div class="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center p-8">
-                                <span class="text-center font-bold text-slate-500 group-hover:text-blue-400 transition">Helloo Beauty</span>
-                             </div>
-                        </div>
-                        <h4 class="text-xl font-bold group-hover:text-blue-400 transition">Helloo Beauty</h4>
-                        <p class="text-sm text-slate-400 uppercase tracking-widest font-semibold">UI/UX & Replo</p>
-                    </div>
-                </a>
-
-                <!-- Project 3 -->
-                <a href="https://www.bikinisaturdays.com" target="_blank" class="group">
-                    <div class="space-y-4">
-                        <div class="aspect-[4/5] bg-slate-800 rounded-2xl overflow-hidden border border-slate-800 transition-all duration-500 group-hover:border-blue-500">
-                            <div class="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center p-8">
-                                <span class="text-center font-bold text-slate-500 group-hover:text-blue-400 transition">Bikini Saturdays</span>
-                             </div>
-                        </div>
-                        <h4 class="text-xl font-bold group-hover:text-blue-400 transition">Bikini Saturdays</h4>
-                        <p class="text-sm text-slate-400 uppercase tracking-widest font-semibold">High-Impact Funnel</p>
-                    </div>
-                </a>
             </div>
         </div>
     </section>
